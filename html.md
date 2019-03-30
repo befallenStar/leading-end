@@ -29,6 +29,10 @@
 - href 链接路径或指向的锚点名
 - name 锚点名
 - target 跳转页面的方法
+  + _blank 在新标签页打开
+  + _self 在同一窗口打开
+  + _parent 在父窗口打开
+  + _top 在顶级窗口打开
 ### table 表格
 - tr 行
 - th 标题行

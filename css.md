@@ -31,5 +31,19 @@
   + 组合选择器 不同选择器用逗号隔开选择不同选择器
   + 子标签选择器 从父标签层层选择对应子标签
   + 属性选择器 标签[属性=属性值] 选择指定标签对应属性的标签
+- 伪类
+  + :active 被激活的元素
+  + :focus 拥有焦点的元素
+  + :hover 鼠标悬浮的元素
+  + :link 未被访问的链接
+  + :visited 已被访问的链接
+  + :first-child 元素的第一个子元素
+  + :lang 带有指定lang属性的元素
 ## 盒子模型
 - margin 外边距
+- border 边框
+- padding 内边距
+## position 定位
+- relative 相对定位 相对原来元素所在的位置
+- absolute 绝对定位 相对页面的位置或者相对position=relative的父级元素的位置
+- fixed 固定定位 固定在浏览器中显示的位置
