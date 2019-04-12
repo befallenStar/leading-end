@@ -65,6 +65,10 @@ var 函数名=new Function(["参数1",["参数2",...["参数n",]]]]"函数体");
 3.
 var 函数名=function(参数名1[, 参数名2[, . . . [, 参数名n]]]){函数体}
 ```
+### 调用
+- 可以直接在代码域调用
+- 可以添加在html元素属性中，通过元素对应事件调用
+- 超链接调用 javascript:函数名([形参列表])
 ## 类
 ### 声明
 通过构造函数声明
@@ -80,3 +84,50 @@ function 类名(形参列表){
 对象变量可以动态添加
 ### “继承”
 子类作为父类的成员变量被声明，或者直接将prototype赋值为子类对象
+## 自定义对象
+可以不预先定义类而直接使用对象进行赋值等操作
+```
+1.
+var 对象名=new Object();
+对象名.属性名=属性值;
+```
+```
+2.
+var 对象名={};
+对象名.属性名=属性值;
+```
+## 常用内置对象
+查看api
+- String
+- Date
+- Math
+- Global
+## 事件机制
+- 单双击事件 onclick ondblclick
+- 鼠标事件 onmouseover onmousemove onmouseout
+- 键盘事件 onkeyup onkeydown
+- 焦点事件 onfocus onblur
+- 页面加载事件 onload
+- 值改变事件 onchange
+### 添加事件
+- 在html元素对应属性中添加对应事件函数
+- 
+---
+## BOM浏览器对象模型
+浏览器的内核语言支持规范，规范浏览器对js语言的支持，让js能直接调用浏览器本身的功能
+
+---
+## window对象
+调用方法时window关键字可以省略不写
+- 框体方法
+  + alert   警告框  无返回值
+  + confirm 确认框  点击确定返回true，点击取消返回false
+  + prompt  提示框  点击确定返回空值或用户输入内容，点击取消返回null
+- 定时和间隔执行方法
+  + setTimeout  定时执行指定函数            返回定时器线程id
+  + setInterval 间隔一段时间执行指定函数    返回间隔器线程id
+  + clearTimeout    停止指定id定时器
+  + clearInterval   停止指定id间隔器
+- 子窗口方法
+## document对象
+## form表单
