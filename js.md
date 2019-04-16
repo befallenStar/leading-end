@@ -117,7 +117,7 @@ var 对象名={};
 浏览器的内核语言支持规范，规范浏览器对js语言的支持，让js能直接调用浏览器本身的功能
 
 ---
-## window对象
+### window对象
 调用方法时window关键字可以省略不写
 - 框体方法
   + alert   警告框  无返回值
@@ -129,5 +129,22 @@ var 对象名={};
   + clearTimeout    停止指定id定时器
   + clearInterval   停止指定id间隔器
 - 子窗口方法
-## document对象
-## form表单
+  + open 根据实参决定打开页面及打开方法
+  + close 关闭由open打开的页面
+  + opener 父页面对象，用以调用父页面函数
+- 浏览器属性
+  + 地址栏属性 location
+    * href
+    * reload
+  + 历史记录属性 history
+    * forward
+    * back
+    * go
+  + 屏幕属性 screen
+    * width
+    * height
+  + 浏览器配置属性 navigator
+    * userAgent
+  + 主体面板属性(document)
+### document对象
+### form表单
