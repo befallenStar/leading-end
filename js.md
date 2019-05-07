@@ -147,4 +147,23 @@ var 对象名={};
     * userAgent
   + 主体面板属性(document)
 ### document对象
+用以动态获取HTML页面并对HTML页面元素进行修改
+- 获取HTML元素对象
+  + getElementById
+  + getElementByName
+  + getElementByTagName
+  + getElementByClassName
+  + .childNodes
+  + .parentNode
+  + .previousSibling
+  + .nextSibling
+- 操作HTML元素对象的属性
+  + .属性名
+  + .getAttribute
+  + .setAttribute
+- 操作HTML元素对象的内容和样式
+- 操作HTML的文档结构
+- 操作form元素
+- 操作表格
+- 实现form表单校验
 ### form表单
