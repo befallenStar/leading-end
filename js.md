@@ -109,14 +109,11 @@ var 对象名={};
 - 焦点事件 onfocus onblur
 - 页面加载事件 onload
 - 值改变事件 onchange
+- form提交事件 onsubmit
 ### 添加事件
 - 在html元素对应属性中添加对应事件函数
-- 
----
 ## BOM浏览器对象模型
 浏览器的内核语言支持规范，规范浏览器对js语言的支持，让js能直接调用浏览器本身的功能
-
----
 ### window对象
 调用方法时window关键字可以省略不写
 - 框体方法
@@ -162,8 +159,27 @@ var 对象名={};
   + .getAttribute
   + .setAttribute
 - 操作HTML元素对象的内容和样式
+  + .innerHTML
+  + .innerText
+  + .style.属性
+  + .className
 - 操作HTML的文档结构
+  + .innerHTML
+  + .removeChild
+  + createElement
+  + .appendChild
 - 操作form元素
+  + form name属性
+  + .elements 获取表单元素
+  + .submit
+  + .reset
+  + .action
+- 操作多选框
+- 操作下拉框
+  + .options
 - 操作表格
-- 实现form表单校验
-### form表单
+  + deleteRow(行对象.rowIndex)
+  + 行对象.cells[index]
+  + .rows[index]
+  + insertRow(index)
+  + insertCell(index)
