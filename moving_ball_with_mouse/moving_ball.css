@@ -1,0 +1,35 @@
+.effect{
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    filter:contrast(10);
+    background:#fff;
+    text-align: center;
+}
+.big_ball{
+    position: absolute;
+    top:50%;
+    left:50%;
+    width:200px;
+    height:200px;
+    transform:translate(-100px,-100px);
+    background: #000;
+    padding:10px;
+    border-radius: 50%;
+    margin:0 auto;
+    z-index:1;
+    filter:blur(10px);
+}
+.small_ball{
+    position: absolute;
+    width:120px;
+    height:120px;
+    background: #f00;
+    padding:10px;
+    border-radius: 50%;
+    z-index:2;
+    filter:blur(10px);
+    cursor:none;
+}
