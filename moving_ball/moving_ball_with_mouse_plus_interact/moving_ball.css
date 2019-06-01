@@ -1,0 +1,39 @@
+.effect{
+    position: absolute;
+    top:0;
+    left:60%;
+    width:660px;
+    height:660px;
+    transform: translateX(-330px);
+    filter:contrast(5);
+    text-align: center;
+}
+.big_ball{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-100px,-100px);
+    padding:25px;
+    border-radius: 50%;
+    margin:0 auto;
+    z-index:1;
+    filter:blur(10px);
+}
+.small_ball{
+    position: absolute;
+    padding:25px;
+    border-radius: 50%;
+    z-index:2;
+    filter:blur(10px);
+    cursor:none;
+}
+table{
+    border-collapse: collapse;
+}
+table,tr,th,td{
+    border:solid 1px black;
+    text-align: center;
+}
+td{
+    width:100px;
+}

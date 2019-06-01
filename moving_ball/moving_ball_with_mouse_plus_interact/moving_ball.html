@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>小球移动</title>
+    <link rel="stylesheet" href="moving_ball.css" />
+    <script src="jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <table>
+        <tr>
+            <th></th>
+            <th>大小(px)</th>
+            <th>颜色</th>
+        </tr>
+        <tr>
+            <td>小球</td>
+            <td><input type="number" id="small_size" value="120"></td>
+            <td><input type="color" id="small_color" value="#ff0000"></td>
+        </tr>
+        <tr>
+            <td>大球</td>
+            <td><input type="number" id="big_size" value="200"></td>
+            <td><input type="color" id="big_color" value="#000000"></td>
+        </tr>
+        <tr>
+                <td colspan="3">主背景色</td>
+        </tr>
+        <tr>
+            <td colspan="3"><input type="color" id="color" value="#ffffff"></td>
+        </tr>
+    </table>
+    <div class="effect">
+        <div class="big_ball"></div>
+        <div class="small_ball"></div>
+    </div>
+    <script src="moving_ball.js"></script>
+</body>
+</html>
