@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="3Dmol-min.js"></script>
+    </head>
+    <body>
+        <div>
+            <p>something</p>
+        </div>
+    </body>
+    <script>
+        var viewer = $3Dmol.createViewer($("div"));
+        $3Dmol.download("pdb:1UBQ",viewer,{multimodel:true, frames:true},function(){
+            viewer.setStyle({}, {cartoon:{color:"spectrum"}});
+            viewer.render();
+        });
+    </script>
+</html>
