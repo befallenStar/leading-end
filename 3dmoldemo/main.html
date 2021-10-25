@@ -4,15 +4,24 @@
         <script src="3Dmol-min.js"></script>
     </head>
     <body>
-        <div>
-            <p>something</p>
+        <div style="height: 800px;width: 800px;">
         </div>
     </body>
     <script>
         var viewer = $3Dmol.createViewer($("div"));
-        $3Dmol.download("pdb:1UBQ",viewer,{multimodel:true, frames:true},function(){
-            viewer.setStyle({}, {cartoon:{color:"spectrum"}});
-            viewer.render();
-        });
+        // $3Dmol.download("pdb:1UBQ",viewer,{multimodel:true, frames:true},function(){
+        //     viewer.setStyle({}, {cartoon:{color:"spectrum"}});
+        //     viewer.render();
+        // });
+        $3Dmol.download("pdb:1UBQ",viewer,{},function(){
+                  viewer.setBackgroundColor(0xffffffff);
+                  var colorAsSnake = function(atom) {
+                    return atom.resi % 2 ? 'white': 'green'
+                  };
+
+                  viewer.setStyle( {chain:'A'}, {sphere: {radius:1}});
+                  viewer.addSurface($3Dmol.SurfaceType.SAS, {'opacity':0.5, colorscheme: 'whiteCarbon'});
+                  viewer.render();
+              });
     </script>
 </html>

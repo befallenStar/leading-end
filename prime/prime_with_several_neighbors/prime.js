@@ -64,3 +64,55 @@ $("#comingPrime").on("click", function (e) {
     $("#searchNumber").val(currentNumber);
     $("#nextPrime").text(currentNumber);
 })
+
+$("#lastList").on("click", function (e) {
+    e.preventDefault();
+    $("#searchResult").text("");
+    $("#nextPrime").text("");
+    var currentNumber = $("#searchNumber").val() - 1;
+    var length = $("#length").val();
+    var flag = prime(currentNumber);
+    var primes = [];
+    for (var i = 0; i < length; i++) {
+        while (!flag) {
+            currentNumber--;
+            flag = prime(currentNumber);
+        }
+        flag = false;
+
+        if (currentNumber < 2) {
+            $("#searchResult").text("2是最小的素数");
+            break;
+        }
+        primes[i] = currentNumber;
+    }
+    var result = primes.join("、");
+    console.log(result);
+    $("#nextPrime").text(result);
+})
+
+$("#comingList").on("click", function (e) {
+    e.preventDefault();
+    $("#searchResult").text("");
+    $("#nextPrime").text("");
+    var currentNumber = +$("#searchNumber").val() + 1;
+    var length = $("#length").val();
+    var flag = prime(currentNumber);
+    var primes = [];
+    for (var i = 0; i < length; i++) {
+        while (!flag) {
+            currentNumber++;
+            flag = prime(currentNumber);
+        }
+        flag = false;
+
+        if (currentNumber < 2) {
+            $("#searchResult").text("2是最小的素数");
+            break;
+        }
+        primes[i] = currentNumber;
+    }
+    var result = primes.join("、");
+    console.log(result);
+    $("#nextPrime").text(result);
+})
